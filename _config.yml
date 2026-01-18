@@ -1,0 +1,51 @@
+# Site Settings
+title: Start
+browser_title: Chasing the Holy Grail
+description: CV and Blog about Product Management and Software Engineering
+author: Tobias Eichermüller
+email: eichermueller.tobias@gmail.com
+url: "https://chasingtheholygrail.github.io"
+baseurl: "" # Leave empty if repository name = username.github.io
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Navigation
+navigation:
+  - title: CV
+    url: /cv
+  - title: Journey
+    url: /journey
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Tobias Eichermüller"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# SASS
+sass:
+  style: compressed
+  quiet_deps: true

@@ -1,0 +1,166 @@
+---
+layout: default
+title: CV
+---
+
+<div class="cv-page">
+  <div class="page-header">
+    <h1 class="page-title">Curriculum Vitae</h1>
+    <a href="{{ site.baseurl }}/assets/documents/cv_long.pdf" download class="cv-download-link" aria-label="Download CV">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+    </a>
+  </div>
+
+  <div class="cv-content">
+    <div class="cv-pdf-container" id="pdfContainer">
+      <div class="cv-loading" id="cvLoading">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
+          <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round">
+            <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+          </path>
+        </svg>
+        <p>Loading CV...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+  // PDF.js worker
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+  
+  const pdfUrl = '{{ site.baseurl }}/assets/documents/cv_long.pdf';
+  const container = document.getElementById('pdfContainer');
+  const loadingEl = document.getElementById('cvLoading');
+  
+  // Calculate scale to fit page width with padding consideration
+  function calculateScale(pageWidth, containerWidth) {
+    // On very small screens, use full width
+    const effectiveWidth = Math.max(containerWidth, 280);
+    return effectiveWidth / pageWidth;
+  }
+  
+  // Get device pixel ratio for high-DPI displays
+  function getRenderScale() {
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    // On mobile, cap the render scale to save memory
+    const isMobile = window.innerWidth <= 768;
+    return isMobile ? Math.min(devicePixelRatio, 2) : Math.max(devicePixelRatio, 2);
+  }
+  
+  function renderPDF() {
+    const renderScale = getRenderScale();
+    
+    pdfjsLib.getDocument(pdfUrl).promise.then(function(pdfDoc) {
+      const numPages = pdfDoc.numPages;
+      const containerWidth = container.offsetWidth || window.innerWidth - 32;
+      
+      // Hide loading indicator
+      if (loadingEl) loadingEl.style.display = 'none';
+      
+      // Store promises for ordered rendering
+      const renderPromises = [];
+      
+      // Render all pages
+      for (let pageNum = 1; pageNum <= numPages; pageNum++) {
+        const promise = pdfDoc.getPage(pageNum).then(function(page) {
+          const viewport = page.getViewport({scale: 1.0});
+          const scale = calculateScale(viewport.width, containerWidth);
+          const scaledViewport = page.getViewport({scale: scale * renderScale});
+          
+          // Create canvas for this page
+          const canvas = document.createElement('canvas');
+          const ctx = canvas.getContext('2d');
+          
+          // Set canvas size at high resolution
+          canvas.width = scaledViewport.width;
+          canvas.height = scaledViewport.height;
+          
+          // Set display size (CSS pixels) - use 100% width to fill container
+          canvas.style.width = '100%';
+          canvas.style.height = 'auto';
+          canvas.className = 'cv-pdf-page';
+          canvas.setAttribute('data-page', pageNum);
+          
+          // Scale the context to match the device pixel ratio
+          ctx.scale(renderScale, renderScale);
+          
+          const renderContext = {
+            canvasContext: ctx,
+            viewport: page.getViewport({scale: scale})
+          };
+          
+          return page.render(renderContext).promise.then(function() {
+            return { canvas, pageNum };
+          });
+        });
+        renderPromises.push(promise);
+      }
+      
+      // Append canvases in order
+      Promise.all(renderPromises).then(function(results) {
+        results.sort((a, b) => a.pageNum - b.pageNum);
+        results.forEach(function(result) {
+          container.appendChild(result.canvas);
+        });
+      });
+    }).catch(function(error) {
+      console.error('Error loading PDF:', error);
+      if (loadingEl) loadingEl.style.display = 'none';
+      container.innerHTML = 
+        '<div class="pdf-error">' +
+        '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">' +
+        '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>' +
+        '<polyline points="14 2 14 8 20 8"></polyline>' +
+        '</svg>' +
+        '<p>Unable to display PDF</p>' +
+        '<a href="' + pdfUrl + '" download class="cv-download-link">' +
+        '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">' +
+        '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>' +
+        '<polyline points="7 10 12 15 17 10"></polyline>' +
+        '<line x1="12" y1="15" x2="12" y2="3"></line>' +
+        '</svg>' +
+        '<span>Download PDF instead</span>' +
+        '</a>' +
+        '</div>';
+    });
+  }
+  
+  // Initial render
+  renderPDF();
+  
+  // Recalculate on resize with debounce
+  let resizeTimeout;
+  let lastWidth = window.innerWidth;
+  
+  window.addEventListener('resize', function() {
+    // Only re-render if width changed significantly (orientation change or significant resize)
+    const widthDiff = Math.abs(window.innerWidth - lastWidth);
+    if (widthDiff < 50) return;
+    
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(function() {
+      lastWidth = window.innerWidth;
+      // Remove existing canvases but keep loading element
+      const canvases = container.querySelectorAll('canvas');
+      canvases.forEach(c => c.remove());
+      renderPDF();
+    }, 300);
+  });
+  
+  // Handle orientation change specifically
+  window.addEventListener('orientationchange', function() {
+    setTimeout(function() {
+      lastWidth = window.innerWidth;
+      const canvases = container.querySelectorAll('canvas');
+      canvases.forEach(c => c.remove());
+      renderPDF();
+    }, 100);
+  });
+</script>
