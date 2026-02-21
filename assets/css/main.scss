@@ -1103,6 +1103,7 @@ li {
 .post-content {
   line-height: 1.65;
   font-size: 1rem;
+  text-align: justify;
 
   h2 {
     font-size: 1.4rem;
@@ -1139,7 +1140,8 @@ li {
 
   ul, ol {
     margin-bottom: $spacing-unit * 0.75;
-    padding-left: $spacing-unit * 1.25;
+    margin-left: $spacing-unit * 0.5;
+    padding-left: 0;
     
     li {
       margin-bottom: $spacing-unit * 0.35;
@@ -1156,7 +1158,7 @@ li {
     
     li {
       position: relative;
-      padding-left: $spacing-unit * 1;
+      padding-left: $spacing-unit * 0.6;
       
       &::before {
         content: "";
@@ -1169,6 +1171,10 @@ li {
         border-radius: 50%;
       }
     }
+  }
+
+  ol {
+    padding-left: $spacing-unit * 0.75;
   }
 
   code {
@@ -1213,11 +1219,23 @@ li {
   }
 
   img {
-    max-width: 100%;
+    width: 70%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
-    margin: $spacing-unit * 1.25 0;
+    margin: $spacing-unit * 1.25 auto;
+    display: block;
+  }
+
+  // Image captions (em after img)
+  img + em {
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+    color: $text-light;
+    margin-top: -$spacing-unit * 0.9;
+    margin-bottom: $spacing-unit;
+    font-style: normal;
   }
 
   hr {
@@ -1225,6 +1243,52 @@ li {
     height: 1px;
     background: linear-gradient(90deg, transparent, $border-color, transparent);
     margin: $spacing-unit * 1.5 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: $spacing-unit 0;
+    font-size: 0.95rem;
+    
+    th, td {
+      padding: $spacing-unit * 0.75 $spacing-unit;
+      text-align: left;
+      border-bottom: 1px solid $border-color;
+      vertical-align: top;
+    }
+    
+    th {
+      background-color: rgba($accent-color, 0.08);
+      color: $primary-color;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    
+    td:first-child {
+      width: 30%;
+      min-width: 150px;
+      color: $primary-color;
+    }
+    
+    tr:hover {
+      background-color: rgba($accent-color, 0.03);
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+
+  // Table footnotes (paragraph with only em after table)
+  table + p {
+    &:has(> em:only-child) {
+      font-size: 0.8rem;
+      color: $text-light;
+      margin-top: -$spacing-unit * 0.5;
+      margin-bottom: $spacing-unit;
+      text-align: center;
+    }
   }
 }
 
