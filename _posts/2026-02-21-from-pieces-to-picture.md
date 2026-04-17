@@ -41,7 +41,7 @@ Stanier illustrates this with an example in the book: a SaaS analytics company w
 
 The root cause? The Data team had to collaborate with every other team while also doing their own work. They ran the crawlers, managed storage, and consulted with three product teams. They became a bottleneck. Crawling speed suffered because it always lost priority to urgent requests from other teams. Meanwhile, each product team focused inward on their own area. Nobody owned the holistic user experience.
 
-![Bad Org Chart Example]({{ site.baseurl }}/assets/images/org-chart-ai-generated-bad-example.png)
+![Bad Org Chart Example]({{ site.baseurl }}/assets/images/blogposts/from-pieces-to-picture/org-chart-ai-generated-bad-example.png)
 *AI generated illustration showing organizational bottlenecks*
 
 The fix wasn't hiring more people or working harder. It was restructuring. The original four teams became seven:
