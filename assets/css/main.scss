@@ -1177,6 +1177,238 @@ li {
 
   ol {
     padding-left: $spacing-unit * 0.75;
+
+    li::marker {
+      color: $accent-color;
+    }
+  }
+
+  .overview-block-label {
+    margin: 1.25rem 0 0.6rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: $primary-color;
+    line-height: 1.3;
+  }
+
+  // Clickable blog screenshots: grid, thumb button, shared caption style
+  .blog-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .blog-image-item {
+    flex: 1 1 calc(20% - 12px);
+    min-width: 160px;
+  }
+
+  .blog-image-grid--two-up .blog-image-item {
+    flex: 1 1 48%;
+    min-width: 260px;
+  }
+
+  .blog-image-grid--three-up .blog-image-item {
+    flex: 1 1 240px;
+    min-width: 0;
+  }
+
+  .blog-image-stack .blog-image-item {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .blog-image-thumb {
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    overflow: visible;
+    cursor: zoom-in;
+  }
+
+  .blog-image-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .blog-image-item > em,
+  .blog-image-single > em,
+  .four-up-gallery > div > em {
+    display: block;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.35;
+    text-align: center;
+    font-style: normal;
+    font-size: 0.75rem;
+    color: $text-light;
+  }
+
+  .blog-image-single {
+    margin: $spacing-unit * 1.25 0 $spacing-unit * 1.5;
+  }
+
+  .mockups-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .mockups-gallery__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .mockups-gallery__row--split .blog-image-item {
+    flex: 1 1 45%;
+    min-width: 0;
+  }
+
+  .mockups-gallery__row:not(.mockups-gallery__row--split) .blog-image-item {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .blog-audio-row {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .blog-audio-row > div {
+    flex: 1 1 240px;
+    min-width: 0;
+  }
+
+  .blog-audio-row audio {
+    width: 100%;
+  }
+
+  @media (max-width: 760px) {
+    .blog-image-item {
+      flex-basis: 100%;
+      min-width: 0;
+    }
+  }
+
+  // Four images in one row (Auth login, Kill Your Darlings, …)
+  .four-up-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 1rem 0 1.5rem;
+    align-items: start;
+
+    > div {
+      min-width: 0;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .four-up-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 480px) {
+    .four-up-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Six logo or asset samples in one row (Logo Lessons)
+  .logo-lessons-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 0.75rem 0.5rem;
+    margin: 1rem 0 1.5rem;
+    align-items: stretch;
+
+    .logo-lessons-card {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid $border-color;
+      border-radius: 8px;
+      padding: 0.5rem;
+      background: rgba($bg-light, 0.95);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+      min-height: 280px;
+    }
+
+    .logo-lessons-card-visual {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+      width: 100%;
+    }
+
+    .logo-lessons-card-visual .blog-image-thumb {
+      flex: 1 1 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      cursor: zoom-in;
+    }
+
+    .logo-lessons-card-visual .blog-image-thumb img {
+      width: 100%;
+      max-height: 220px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 !important;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .logo-lessons-card em {
+      display: block;
+      flex-shrink: 0;
+      width: 100%;
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+      padding: 0 2px;
+      text-align: center;
+      font-size: 0.68rem;
+      line-height: 1.35;
+      font-style: normal;
+      color: $text-light;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      word-wrap: break-word;
+      hyphens: auto;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .logo-lessons-gallery {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 600px) {
+    .logo-lessons-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   code {
@@ -1190,19 +1422,28 @@ li {
   }
 
   pre {
-    background: linear-gradient(135deg, #1e293b, #0f172a);
+    background: linear-gradient(135deg, #0a2818, #0d3d24);
+    border: 1px solid rgba($accent-color, 0.28);
     padding: $spacing-unit;
     border-radius: 10px;
-    overflow-x: auto;
     margin: $spacing-unit * 1.25 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 20px rgba($accent-color, 0.14);
+    // Flexible line wrapping inside the content column (no fixed manual breaks needed)
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    overflow-x: hidden;
+    max-width: 100%;
 
     code {
       background: none;
       padding: 0;
-      color: #e2e8f0;
+      color: #d1f5e0;
       border: none;
       font-size: 0.88rem;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      overflow-wrap: anywhere;
     }
   }
 
@@ -1292,6 +1533,45 @@ li {
       margin-bottom: $spacing-unit;
       text-align: center;
     }
+  }
+}
+
+// Fullscreen image lightbox (markup appended after post content in post layout)
+.blog-image-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 2vh 2vw;
+  align-items: center;
+  justify-content: center;
+
+  &--open {
+    display: flex;
+  }
+
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    background: rgba(255, 255, 255, 0.95);
+    cursor: pointer;
+    font-size: 0.95rem;
+  }
+
+  &__img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(92vw, 820px);
+    max-height: 92vh;
+    border-radius: 12px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+    margin: 0;
   }
 }
 

@@ -1,0 +1,44 @@
+<div id="blog-image-lightbox" class="blog-image-lightbox" aria-hidden="true">
+  <button type="button" class="blog-image-lightbox__close" onclick="closeBlogImageLightbox()" aria-label="Close enlarged image">Close</button>
+  <img id="blog-image-lightbox-content" class="blog-image-lightbox__img" src="" alt="" onclick="event.stopPropagation();" />
+</div>
+
+<script>
+  function isMobileLightboxDisabled() {
+    return window.matchMedia("(max-width: 760px)").matches;
+  }
+
+  function openBlogImageLightbox(src, alt) {
+    if (isMobileLightboxDisabled()) return;
+    var modal = document.getElementById("blog-image-lightbox");
+    var image = document.getElementById("blog-image-lightbox-content");
+    if (!modal || !image) return;
+    image.src = src;
+    image.alt = alt || "";
+    modal.classList.add("blog-image-lightbox--open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeBlogImageLightbox() {
+    var modal = document.getElementById("blog-image-lightbox");
+    var image = document.getElementById("blog-image-lightbox-content");
+    if (!modal || !image) return;
+    modal.classList.remove("blog-image-lightbox--open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    image.src = "";
+    image.alt = "";
+  }
+
+  var lightboxEl = document.getElementById("blog-image-lightbox");
+  if (lightboxEl) {
+    lightboxEl.addEventListener("click", function () {
+      closeBlogImageLightbox();
+    });
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closeBlogImageLightbox();
+  });
+</script>
