@@ -2,11 +2,12 @@
 layout: default
 title: CV
 ---
+{% capture cv_pdf_url %}{{ site.baseurl }}/assets/documents/cv_long.pdf?v={{ site.time | date: '%s' }}{% endcapture %}
 
 <div class="cv-page">
   <div class="page-header">
     <h1 class="page-title">Curriculum Vitae</h1>
-    <a href="{{ site.baseurl }}/assets/documents/cv_long.pdf" download class="cv-download-link" aria-label="Download CV">
+    <a href="{{ cv_pdf_url }}" download class="cv-download-link" aria-label="Download CV">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
         <polyline points="7 10 12 15 17 10"></polyline>
@@ -35,7 +36,7 @@ title: CV
   // PDF.js worker
   pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
   
-  const pdfUrl = '{{ site.baseurl }}/assets/documents/cv_long.pdf';
+  const pdfUrl = {{ cv_pdf_url | jsonify }};
   const container = document.getElementById('pdfContainer');
   const loadingEl = document.getElementById('cvLoading');
   
