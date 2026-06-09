@@ -8,6 +8,7 @@ url: "https://chasingtheholygrail.github.io"
 baseurl: "" # Leave empty if repository name = username.github.io
 
 # Build Settings
+timezone: Europe/Berlin
 markdown: kramdown
 highlighter: rouge
 plugins:
