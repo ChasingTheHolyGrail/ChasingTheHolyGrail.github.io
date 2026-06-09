@@ -1,0 +1,675 @@
+{
+  "summary": {
+    "totalQuotes": 236,
+    "totalWords": 10618,
+    "avgWordsPerQuote": 45,
+    "bookWordsExtracted": 60499,
+    "bookWordsEstimated": 101750,
+    "pctExtracted": 17.6,
+    "pctEstimated": 10.4
+  },
+  "lengthBins": {
+    "1-10": 18,
+    "11-25": 52,
+    "26-50": 97,
+    "51-100": 65,
+    "101+": 4
+  },
+  "partCounts": {
+    "Part I": 19,
+    "Part II": 85,
+    "Part III": 38,
+    "Part IV": 80,
+    "Part V": 14
+  },
+  "partWords": {
+    "Part I": 803,
+    "Part II": 3754,
+    "Part III": 1657,
+    "Part IV": 3782,
+    "Part V": 622
+  },
+  "partMeta": {
+    "Part I": "Lessons from Top Tech",
+    "Part II": "The Right People",
+    "Part III": "The Right Product",
+    "Part IV": "The Right Process",
+    "Part V": "The Right Culture"
+  },
+  "chapters": [
+    {
+      "num": 1,
+      "title": "Behind Every Great Product",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 2,
+      "title": "Technology-Powered",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 3,
+      "title": "Startups: Getting to",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 4,
+      "title": "Growth-Stage Companies:",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 5,
+      "title": "Enterprise Companies:",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 3,
+      "words": 198
+    },
+    {
+      "num": 6,
+      "title": "The Root Causes of Failed",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 1,
+      "words": 61
+    },
+    {
+      "num": 7,
+      "title": "Beyond Lean and Agile",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 7,
+      "words": 242
+    },
+    {
+      "num": 8,
+      "title": "Key Concepts",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 8,
+      "words": 302
+    },
+    {
+      "num": 9,
+      "title": "Principles of Strong",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 11,
+      "words": 443
+    },
+    {
+      "num": 10,
+      "title": "The Product Manager",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 26,
+      "words": 1193
+    },
+    {
+      "num": 11,
+      "title": "The Product Designer",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 6,
+      "words": 318
+    },
+    {
+      "num": 12,
+      "title": "The Engineers",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 1,
+      "words": 36
+    },
+    {
+      "num": 13,
+      "title": "Product Marketing",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 14,
+      "title": "The Supporting Roles",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 4,
+      "words": 154
+    },
+    {
+      "num": 15,
+      "title": "Profile: Jane Manning",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 16,
+      "title": "The Role of Leadership",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 7,
+      "words": 307
+    },
+    {
+      "num": 17,
+      "title": "The Head of Product Role",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 9,
+      "words": 368
+    },
+    {
+      "num": 18,
+      "title": "The Head of Technology Role",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 4,
+      "words": 193
+    },
+    {
+      "num": 19,
+      "title": "The Delivery Manager Role",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 6,
+      "words": 243
+    },
+    {
+      "num": 20,
+      "title": "Principles of Structuring",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 11,
+      "words": 499
+    },
+    {
+      "num": 21,
+      "title": "Profile: Lea Hickman",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 22,
+      "title": "The Problems with Product",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 1,
+      "words": 65
+    },
+    {
+      "num": 23,
+      "title": "The Alternative",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 10,
+      "words": 374
+    },
+    {
+      "num": 24,
+      "title": "Product Vision",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 5,
+      "words": 150
+    },
+    {
+      "num": 25,
+      "title": "Principles of Product Vision",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 2,
+      "words": 39
+    },
+    {
+      "num": 26,
+      "title": "Principles of Product",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 2,
+      "words": 103
+    },
+    {
+      "num": 27,
+      "title": "Product Principles",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 3,
+      "words": 86
+    },
+    {
+      "num": 28,
+      "title": "The OKR Technique",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 4,
+      "words": 208
+    },
+    {
+      "num": 29,
+      "title": "Product Team Objectives",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 2,
+      "words": 208
+    },
+    {
+      "num": 30,
+      "title": "Product Objectives @ Scale",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 2,
+      "words": 76
+    },
+    {
+      "num": 31,
+      "title": "Product Evangelism",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 5,
+      "words": 249
+    },
+    {
+      "num": 32,
+      "title": "Profile: Alex Pressland",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 2,
+      "words": 99
+    },
+    {
+      "num": 33,
+      "title": "Principles of Product",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 6,
+      "words": 376
+    },
+    {
+      "num": 34,
+      "title": "Discovery Techniques",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 7,
+      "words": 232
+    },
+    {
+      "num": 35,
+      "title": "Opportunity Assessment",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 2,
+      "words": 63
+    },
+    {
+      "num": 36,
+      "title": "Customer Letter Technique",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 3,
+      "words": 168
+    },
+    {
+      "num": 37,
+      "title": "Startup Canvas Technique",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 7,
+      "words": 351
+    },
+    {
+      "num": 38,
+      "title": "Story Map Technique",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 1,
+      "words": 65
+    },
+    {
+      "num": 39,
+      "title": "Customer Discovery",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 16,
+      "words": 905
+    },
+    {
+      "num": 40,
+      "title": "Profile: Martina Lauchengco",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 41,
+      "title": "Customer Interviews",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 4,
+      "words": 98
+    },
+    {
+      "num": 42,
+      "title": "Concierge Test Technique",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 43,
+      "title": "The Power of Customer",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 44,
+      "title": "Hack Days",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 45,
+      "title": "Principles of Prototypes",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 3,
+      "words": 82
+    },
+    {
+      "num": 46,
+      "title": "Feasibility Prototype",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 1,
+      "words": 39
+    },
+    {
+      "num": 47,
+      "title": "User Prototype Technique",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 1,
+      "words": 19
+    },
+    {
+      "num": 48,
+      "title": "Live-Data Prototype",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 1,
+      "words": 52
+    },
+    {
+      "num": 49,
+      "title": "Hybrid Prototype Technique",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 2,
+      "words": 127
+    },
+    {
+      "num": 50,
+      "title": "Testing Usability",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 51,
+      "title": "Testing Value",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 52,
+      "title": "Demand Testing Techniques",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 4,
+      "words": 213
+    },
+    {
+      "num": 53,
+      "title": "Qualitative Value Testing",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 3,
+      "words": 58
+    },
+    {
+      "num": 54,
+      "title": "Quantitative Value Testing",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 3,
+      "words": 80
+    },
+    {
+      "num": 55,
+      "title": "Testing Feasibility",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 3,
+      "words": 240
+    },
+    {
+      "num": 56,
+      "title": "Testing Business Viability",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 5,
+      "words": 192
+    },
+    {
+      "num": 57,
+      "title": "Profile: Kate Arnold",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 58,
+      "title": "Discovery Sprint Technique",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 3,
+      "words": 87
+    },
+    {
+      "num": 59,
+      "title": "Pilot Team Technique",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 1,
+      "words": 61
+    },
+    {
+      "num": 60,
+      "title": "Weaning an Organization",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 2,
+      "words": 98
+    },
+    {
+      "num": 61,
+      "title": "Managing Stakeholders",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 1,
+      "words": 31
+    },
+    {
+      "num": 62,
+      "title": "Communicating Product",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 1,
+      "words": 145
+    },
+    {
+      "num": 63,
+      "title": "Profile: Camille Hearst of",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 64,
+      "title": "Good Product Team/Bad",
+      "part": "Part V",
+      "partTitle": "The Right Culture",
+      "quotes": 6,
+      "words": 282
+    },
+    {
+      "num": 65,
+      "title": "Top Reasons for Loss",
+      "part": "Part V",
+      "partTitle": "The Right Culture",
+      "quotes": 2,
+      "words": 119
+    },
+    {
+      "num": 66,
+      "title": "Top Reasons for Loss",
+      "part": "Part V",
+      "partTitle": "The Right Culture",
+      "quotes": 5,
+      "words": 204
+    },
+    {
+      "num": 67,
+      "title": "Establishing a Strong",
+      "part": "Part V",
+      "partTitle": "The Right Culture",
+      "quotes": 1,
+      "words": 17
+    }
+  ],
+  "topChapters": [
+    {
+      "num": 10,
+      "title": "The Product Manager",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 26,
+      "words": 1193
+    },
+    {
+      "num": 39,
+      "title": "Customer Discovery",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 16,
+      "words": 905
+    },
+    {
+      "num": 9,
+      "title": "Principles of Strong",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 11,
+      "words": 443
+    },
+    {
+      "num": 20,
+      "title": "Principles of Structuring",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 11,
+      "words": 499
+    },
+    {
+      "num": 23,
+      "title": "The Alternative",
+      "part": "Part III",
+      "partTitle": "The Right Product",
+      "quotes": 10,
+      "words": 374
+    },
+    {
+      "num": 17,
+      "title": "The Head of Product Role",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 9,
+      "words": 368
+    },
+    {
+      "num": 8,
+      "title": "Key Concepts",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 8,
+      "words": 302
+    },
+    {
+      "num": 7,
+      "title": "Beyond Lean and Agile",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 7,
+      "words": 242
+    },
+    {
+      "num": 16,
+      "title": "The Role of Leadership",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 7,
+      "words": 307
+    },
+    {
+      "num": 34,
+      "title": "Discovery Techniques",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 7,
+      "words": 232
+    },
+    {
+      "num": 37,
+      "title": "Startup Canvas Technique",
+      "part": "Part IV",
+      "partTitle": "The Right Process",
+      "quotes": 7,
+      "words": 351
+    },
+    {
+      "num": 11,
+      "title": "The Product Designer",
+      "part": "Part II",
+      "partTitle": "The Right People",
+      "quotes": 6,
+      "words": 318
+    }
+  ]
+}
