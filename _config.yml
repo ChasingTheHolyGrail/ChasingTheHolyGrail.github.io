@@ -7,6 +7,9 @@ email: eichermueller.tobias@gmail.com
 url: "https://chasingtheholygrail.github.io"
 baseurl: "" # Leave empty if repository name = username.github.io
 
+# Analytics (https://www.goatcounter.com) — set your site code after sign-up
+goatcounter_code: "chasingtheholygrail"
+
 # Build Settings
 timezone: Europe/Berlin
 markdown: kramdown
