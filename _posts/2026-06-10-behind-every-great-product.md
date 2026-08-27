@@ -2,7 +2,7 @@
 layout: post
 title: "Behind Every Great Product"
 date: 2026-06-10 00:00:00 +0200
-categories: [Personal, Product Management, Books]
+categories: [Personal, Product Management, Books, Product Discovery, Product Culture]
 tags: [product management, marty cagan, inspired]
 author: Tobias Eichermüller
 ---
@@ -15,32 +15,20 @@ And that is exactly what happened to me when, during my occasional evening split
 
 I usually consume these videos passively, but Marty's unfiltered and passionate style kept me hooked for the entire runtime. I love it when he works himself into a rage and takes aim at the software development mindset of European companies, agile frameworks, outsourcing, and all the rest. It is simply glorious and absolutely worth watching how radically different a product centric approach can look when lived for real. Here is the video:
 
-<div class="youtube-embed">
-  <a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw" class="youtube-embed__link" target="_blank" rel="noopener noreferrer" aria-label="Watch TRANSFORMED: Moving to the Product Operating Model on YouTube">
-    <img src="{{ site.baseurl }}/assets/images/blogposts/inspired-by-marty-cagan/youtube-transformed-talk-thumbnail.jpg" alt="TRANSFORMED: Moving to the Product Operating Model" class="youtube-embed__thumb">
-    <span class="youtube-embed__play" aria-hidden="true">
-      <svg viewBox="0 0 68 48" width="52" height="37">
-        <path d="M66.52 7.74c-.78-2.93-2.56-5.41-5.42-6.19C55.79 0 34 0 34 0S12.21 0 6.9 1.55C4.04 2.33 2.26 4.81 1.48 7.74.06 12.85.06 24 .06 24s0 11.15 1.48 16.26c.78 2.93 2.56 5.41 5.42 6.19C12.21 48 34 48 34 48s21.79 0 27.1-1.55c2.86-.78 4.64-3.26 5.42-6.19C67.94 35.15 67.94 24 67.94 24S67.94 12.85 66.52 7.74z" fill="#f00"/>
-        <path d="M45 24 27 14v20" fill="#fff"/>
-      </svg>
-    </span>
-    <span class="youtube-embed__badge" aria-hidden="true">YouTube</span>
-  </a>
-  <p class="youtube-embed__caption"><em>Marty Cagan at just product 2023</em></p>
-</div>
+{% include youtube-embed.html id="Zvr-F44Fzkw" title="TRANSFORMED: Moving to the Product Operating Model" caption="Marty Cagan at just product 2023" player_id="cagan-talk" %}
 
 <table class="table-compact">
   <thead>
     <tr><th>Timestamp</th><th>Chapter</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=0s">0:00</a></td><td>TRANSFORMED</td></tr>
-    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=264s">4:24</a></td><td>Product Operating Model</td></tr>
-    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=548s">9:08</a></td><td>The 3 Dimensions</td></tr>
-    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=960s">16:00</a></td><td>Product Model Competencies</td></tr>
-    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=1705s">28:25</a></td><td>Product Model Concepts</td></tr>
-    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=2597s">43:17</a></td><td>Product Culture</td></tr>
-    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=2880s">48:00</a></td><td>Q&amp;A</td></tr>
+    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=0s" data-youtube-player="cagan-talk" data-youtube-seek="0">0:00</a></td><td>TRANSFORMED</td></tr>
+    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=264s" data-youtube-player="cagan-talk" data-youtube-seek="264">4:24</a></td><td>Product Operating Model</td></tr>
+    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=548s" data-youtube-player="cagan-talk" data-youtube-seek="548">9:08</a></td><td>The 3 Dimensions</td></tr>
+    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=960s" data-youtube-player="cagan-talk" data-youtube-seek="960">16:00</a></td><td>Product Model Competencies</td></tr>
+    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=1705s" data-youtube-player="cagan-talk" data-youtube-seek="1705">28:25</a></td><td>Product Model Concepts</td></tr>
+    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=2597s" data-youtube-player="cagan-talk" data-youtube-seek="2597">43:17</a></td><td>Product Culture</td></tr>
+    <tr><td><a href="https://www.youtube.com/watch?v=Zvr-F44Fzkw&t=2880s" data-youtube-player="cagan-talk" data-youtube-seek="2880">48:00</a></td><td>Q&amp;A</td></tr>
   </tbody>
 </table>
 

@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Secure external links with rel="noopener noreferrer" for security
   document.querySelectorAll('a[href^="http"]').forEach(function(link) {
+    if (link.hasAttribute('data-youtube-seek')) {
+      return;
+    }
     if (!link.href.includes(window.location.hostname)) {
       link.setAttribute('rel', 'noopener noreferrer');
       if (!link.hasAttribute('target')) {
@@ -117,6 +120,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Smooth scroll behavior for anchor links (respects reduced motion preference)
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.querySelectorAll('a[data-youtube-seek][data-youtube-player]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      const iframe = document.getElementById(this.getAttribute('data-youtube-player'));
+      if (!iframe || !iframe.dataset.youtubeId) {
+        return;
+      }
+      e.preventDefault();
+      const start = parseInt(this.getAttribute('data-youtube-seek'), 10) || 0;
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + iframe.dataset.youtubeId + '?start=' + start + '&autoplay=1&rel=0';
+      const wrap = iframe.closest('.youtube-embed') || iframe;
+      wrap.scrollIntoView({
+        behavior: prefersReducedMotion ? 'auto' : 'smooth',
+        block: 'center'
+      });
+    });
+  });
   
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

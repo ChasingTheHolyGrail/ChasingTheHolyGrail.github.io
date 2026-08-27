@@ -1,0 +1,21 @@
+{% assign youtube_src = "https://www.youtube-nocookie.com/embed/" | append: include.id | append: "?rel=0" %}
+{% if include.start %}
+  {% assign youtube_src = youtube_src | append: "&start=" | append: include.start %}
+{% endif %}
+<div class="youtube-embed">
+  <div class="youtube-embed__frame">
+    <iframe
+      {% if include.player_id %}id="{{ include.player_id }}"{% endif %}
+      data-youtube-id="{{ include.id }}"
+      src="{{ youtube_src }}"
+      title="{{ include.title | escape }}"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>
+  </div>
+  {% if include.caption %}
+  <p class="youtube-embed__caption"><em>{{ include.caption }}</em></p>
+  {% endif %}
+</div>

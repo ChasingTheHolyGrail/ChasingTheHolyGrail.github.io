@@ -2,7 +2,7 @@
 layout: post
 title: "Chasing Ghosts"
 date: 2026-01-25
-categories: [Personal, Crypto, AI-Assisted Development]
+categories: [Personal, Crypto, AI Development, Coding, Blogging]
 author: Tobias Eichermüller
 ---
 
