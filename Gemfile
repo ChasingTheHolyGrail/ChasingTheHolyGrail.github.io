@@ -4,6 +4,13 @@ gem "jekyll", "~> 4.3"
 gem "jekyll-feed", "~> 0.15"
 gem "jekyll-sitemap", "~> 1.4"
 
+# Ruby 3.4 no longer ships bigdecimal as a default gem.
+gem "bigdecimal"
+
+# Avoid sass-embedded/google-protobuf on Windows. WDAC blocks protobuf_c.so
+# (error 4551), which prevents Jekyll from starting.
+gem "jekyll-sass-converter", "~> 2.2"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do

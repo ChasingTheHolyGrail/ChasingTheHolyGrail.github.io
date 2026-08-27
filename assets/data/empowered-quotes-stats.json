@@ -1,0 +1,856 @@
+{
+  "summary": {
+    "totalQuotes": 156,
+    "matchedQuotes": 156,
+    "unmatchedQuotes": 0,
+    "totalWords": 11552,
+    "avgWordsPerQuote": 74,
+    "bookWordsExtracted": 96797,
+    "bookWordsEstimated": 110000,
+    "pctExtracted": 11.9,
+    "pctEstimated": 10.5
+  },
+  "lengthBins": {
+    "1-10": 2,
+    "11-25": 19,
+    "26-50": 39,
+    "51-100": 67,
+    "101+": 29
+  },
+  "partCounts": {
+    "Part I": 9,
+    "Part II": 47,
+    "Part III": 41,
+    "Part IV": 5,
+    "Part V": 12,
+    "Part VI": 11,
+    "Part VII": 20,
+    "Part VIII": 7,
+    "Part IX": 2,
+    "Part X": 2
+  },
+  "partWords": {
+    "Part I": 433,
+    "Part II": 2465,
+    "Part III": 2737,
+    "Part IV": 404,
+    "Part V": 986,
+    "Part VI": 2011,
+    "Part VII": 1627,
+    "Part VIII": 362,
+    "Part IX": 290,
+    "Part X": 237
+  },
+  "partMeta": {
+    "Part I": "Lessons from Top Tech",
+    "Part II": "Coaching",
+    "Part III": "Staffing",
+    "Part IV": "Vision and Principles",
+    "Part V": "Team Topology",
+    "Part VI": "Product Strategy",
+    "Part VII": "Team Objectives",
+    "Part VIII": "Case Study",
+    "Part IX": "Business Collaboration",
+    "Part X": "Inspired and Transformed"
+  },
+  "partRanges": {
+    "Part I": "Ch. 1–6",
+    "Part II": "Ch. 7–25",
+    "Part III": "Ch. 26–36",
+    "Part IV": "Ch. 37–40",
+    "Part V": "Ch. 41–47",
+    "Part VI": "Ch. 48–52",
+    "Part VII": "Ch. 53–61",
+    "Part VIII": "Ch. 62–70",
+    "Part IX": "Ch. 71–76",
+    "Part X": "Ch. 77–81"
+  },
+  "partOrder": [
+    "Part I",
+    "Part II",
+    "Part III",
+    "Part IV",
+    "Part V",
+    "Part VI",
+    "Part VII",
+    "Part VIII",
+    "Part IX",
+    "Part X"
+  ],
+  "ui": {
+    "heading": "EMPOWERED quote analysis",
+    "highlightThreshold": 7
+  },
+  "compareSummary": {
+    "label": "INSPIRED",
+    "totalQuotes": 236,
+    "totalWords": 10618,
+    "avgWordsPerQuote": 45,
+    "pctEstimated": 10.4
+  },
+  "chapters": [
+    {
+      "num": 1,
+      "title": "Behind Every Great Company",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 1,
+      "words": 107
+    },
+    {
+      "num": 2,
+      "title": "The Role of Technology",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 3,
+      "words": 190,
+      "highlighted": true
+    },
+    {
+      "num": 3,
+      "title": "Strong Product Leadership",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 4,
+      "words": 126,
+      "highlighted": true
+    },
+    {
+      "num": 4,
+      "title": "Empowered Product Teams",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 1,
+      "words": 10,
+      "highlighted": true
+    },
+    {
+      "num": 5,
+      "title": "Leadership in Action",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 6,
+      "title": "A Guide to EMPOWERED",
+      "part": "Part I",
+      "partTitle": "Lessons from Top Tech",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 7,
+      "title": "The Coaching Mindset",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 2,
+      "words": 114
+    },
+    {
+      "num": 8,
+      "title": "The Assessment",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 1,
+      "words": 97
+    },
+    {
+      "num": 9,
+      "title": "The Coaching Plan",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 7,
+      "words": 341,
+      "highlighted": true
+    },
+    {
+      "num": 10,
+      "title": "The One-on-One",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 15,
+      "words": 666,
+      "highlighted": true
+    },
+    {
+      "num": 11,
+      "title": "The Written Narrative",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 3,
+      "words": 178,
+      "highlighted": true
+    },
+    {
+      "num": 12,
+      "title": "Strategic Context",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 3,
+      "words": 99
+    },
+    {
+      "num": 13,
+      "title": "Sense of Ownership",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 14,
+      "title": "Managing Time",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 15,
+      "title": "Thinking",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 16,
+      "title": "Team Collaboration",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 17,
+      "title": "Stakeholder Collaboration",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 2,
+      "words": 117
+    },
+    {
+      "num": 18,
+      "title": "Imposter Syndrome",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 1,
+      "words": 130
+    },
+    {
+      "num": 19,
+      "title": "Customer-Centricity",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 2,
+      "words": 222
+    },
+    {
+      "num": 20,
+      "title": "Integrity",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 21,
+      "title": "Decisions",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 3,
+      "words": 159
+    },
+    {
+      "num": 22,
+      "title": "Effective Meetings",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 3,
+      "words": 73
+    },
+    {
+      "num": 23,
+      "title": "Ethics",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 24,
+      "title": "Happiness",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 5,
+      "words": 269
+    },
+    {
+      "num": 25,
+      "title": "Leader Profile: Lisa Kavanaugh",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 26,
+      "title": "Competence and Character",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 5,
+      "words": 323
+    },
+    {
+      "num": 27,
+      "title": "Recruiting",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 3,
+      "words": 224,
+      "highlighted": true
+    },
+    {
+      "num": 28,
+      "title": "Interviewing",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 6,
+      "words": 499,
+      "highlighted": true
+    },
+    {
+      "num": 29,
+      "title": "Hiring",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 9,
+      "words": 330,
+      "highlighted": true
+    },
+    {
+      "num": 30,
+      "title": "Remote Employees",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 4,
+      "words": 366
+    },
+    {
+      "num": 31,
+      "title": "Onboarding",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 2,
+      "words": 136
+    },
+    {
+      "num": 32,
+      "title": "New Employee Bootcamp",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 3,
+      "words": 215
+    },
+    {
+      "num": 33,
+      "title": "Performance Reviews",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 4,
+      "words": 213
+    },
+    {
+      "num": 34,
+      "title": "Terminating",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 2,
+      "words": 241
+    },
+    {
+      "num": 35,
+      "title": "Promoting",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 3,
+      "words": 190
+    },
+    {
+      "num": 36,
+      "title": "Leader Profile: April Underwood",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 37,
+      "title": "Creating a Compelling Vision",
+      "part": "Part IV",
+      "partTitle": "Vision and Principles",
+      "quotes": 1,
+      "words": 80
+    },
+    {
+      "num": 38,
+      "title": "Sharing the Product Vision",
+      "part": "Part IV",
+      "partTitle": "Vision and Principles",
+      "quotes": 4,
+      "words": 324
+    },
+    {
+      "num": 39,
+      "title": "Product Principles and Ethics",
+      "part": "Part IV",
+      "partTitle": "Vision and Principles",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 40,
+      "title": "Leader Profile: Audrey Crane",
+      "part": "Part IV",
+      "partTitle": "Vision and Principles",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 41,
+      "title": "Optimizing for Empowerment",
+      "part": "Part V",
+      "partTitle": "Team Topology",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 42,
+      "title": "Team Types",
+      "part": "Part V",
+      "partTitle": "Team Topology",
+      "quotes": 2,
+      "words": 155,
+      "highlighted": true
+    },
+    {
+      "num": 43,
+      "title": "Empowering Platform Teams",
+      "part": "Part V",
+      "partTitle": "Team Topology",
+      "quotes": 5,
+      "words": 269
+    },
+    {
+      "num": 44,
+      "title": "Empowering Experience Teams",
+      "part": "Part V",
+      "partTitle": "Team Topology",
+      "quotes": 1,
+      "words": 132
+    },
+    {
+      "num": 45,
+      "title": "Topology and Proximity",
+      "part": "Part V",
+      "partTitle": "Team Topology",
+      "quotes": 1,
+      "words": 83
+    },
+    {
+      "num": 46,
+      "title": "Topology Evolution",
+      "part": "Part V",
+      "partTitle": "Team Topology",
+      "quotes": 2,
+      "words": 196
+    },
+    {
+      "num": 47,
+      "title": "Leader Profile: Debby Meredith",
+      "part": "Part V",
+      "partTitle": "Team Topology",
+      "quotes": 1,
+      "words": 151
+    },
+    {
+      "num": 48,
+      "title": "Focus",
+      "part": "Part VI",
+      "partTitle": "Product Strategy",
+      "quotes": 4,
+      "words": 1390,
+      "highlighted": true
+    },
+    {
+      "num": 49,
+      "title": "Insights",
+      "part": "Part VI",
+      "partTitle": "Product Strategy",
+      "quotes": 5,
+      "words": 373
+    },
+    {
+      "num": 50,
+      "title": "Actions",
+      "part": "Part VI",
+      "partTitle": "Product Strategy",
+      "quotes": 1,
+      "words": 139
+    },
+    {
+      "num": 51,
+      "title": "Management",
+      "part": "Part VI",
+      "partTitle": "Product Strategy",
+      "quotes": 1,
+      "words": 109
+    },
+    {
+      "num": 52,
+      "title": "Leader Profile: Shan-Lyn Ma",
+      "part": "Part VI",
+      "partTitle": "Product Strategy",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 53,
+      "title": "Empowerment",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 8,
+      "words": 435,
+      "highlighted": true
+    },
+    {
+      "num": 54,
+      "title": "Assignment",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 4,
+      "words": 507,
+      "highlighted": true
+    },
+    {
+      "num": 55,
+      "title": "Ambition",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 56,
+      "title": "Commitments",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 3,
+      "words": 232,
+      "highlighted": true
+    },
+    {
+      "num": 57,
+      "title": "Collaboration",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 58,
+      "title": "Management",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 1,
+      "words": 83
+    },
+    {
+      "num": 59,
+      "title": "Accountability",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 1,
+      "words": 112
+    },
+    {
+      "num": 60,
+      "title": "Objectives in Perspective",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 2,
+      "words": 95
+    },
+    {
+      "num": 61,
+      "title": "Leader Profile: Christina Wodtke",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 1,
+      "words": 163
+    },
+    {
+      "num": 62,
+      "title": "Company Backgrounder",
+      "part": "Part VIII",
+      "partTitle": "Case Study",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 63,
+      "title": "Company Objectives",
+      "part": "Part VIII",
+      "partTitle": "Case Study",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 64,
+      "title": "Product Vision and Principles",
+      "part": "Part VIII",
+      "partTitle": "Case Study",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 65,
+      "title": "Team Topology",
+      "part": "Part VIII",
+      "partTitle": "Case Study",
+      "quotes": 3,
+      "words": 122
+    },
+    {
+      "num": 66,
+      "title": "Product Strategy",
+      "part": "Part VIII",
+      "partTitle": "Case Study",
+      "quotes": 2,
+      "words": 125,
+      "highlighted": true
+    },
+    {
+      "num": 67,
+      "title": "Product Team Objectives",
+      "part": "Part VIII",
+      "partTitle": "Case Study",
+      "quotes": 1,
+      "words": 49,
+      "highlighted": true
+    },
+    {
+      "num": 68,
+      "title": "Business Results",
+      "part": "Part VIII",
+      "partTitle": "Case Study",
+      "quotes": 1,
+      "words": 66,
+      "highlighted": true
+    },
+    {
+      "num": 69,
+      "title": "Key Takeaways",
+      "part": "Part VIII",
+      "partTitle": "Case Study",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 70,
+      "title": "Leader Profile: Judy Gibbons",
+      "part": "Part VIII",
+      "partTitle": "Case Study",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 71,
+      "title": "The Role of Product Leaders",
+      "part": "Part IX",
+      "partTitle": "Business Collaboration",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 72,
+      "title": "Stakeholder Management vs Collaboration",
+      "part": "Part IX",
+      "partTitle": "Business Collaboration",
+      "quotes": 1,
+      "words": 127
+    },
+    {
+      "num": 73,
+      "title": "Shared Insights and Learning",
+      "part": "Part IX",
+      "partTitle": "Business Collaboration",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 74,
+      "title": "Keeping the Lights On",
+      "part": "Part IX",
+      "partTitle": "Business Collaboration",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 75,
+      "title": "Evangelism",
+      "part": "Part IX",
+      "partTitle": "Business Collaboration",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 76,
+      "title": "Leader Profile: Avid Larizadeh Duggan",
+      "part": "Part IX",
+      "partTitle": "Business Collaboration",
+      "quotes": 1,
+      "words": 163
+    },
+    {
+      "num": 77,
+      "title": "Meaningful Transformation",
+      "part": "Part X",
+      "partTitle": "Inspired and Transformed",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 78,
+      "title": "Transformation in Action",
+      "part": "Part X",
+      "partTitle": "Inspired and Transformed",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 79,
+      "title": "TRANSFORMED",
+      "part": "Part X",
+      "partTitle": "Inspired and Transformed",
+      "quotes": 0,
+      "words": 0
+    },
+    {
+      "num": 80,
+      "title": "The Most Important Thing",
+      "part": "Part X",
+      "partTitle": "Inspired and Transformed",
+      "quotes": 2,
+      "words": 237
+    },
+    {
+      "num": 81,
+      "title": "The Destination",
+      "part": "Part X",
+      "partTitle": "Inspired and Transformed",
+      "quotes": 0,
+      "words": 0
+    }
+  ],
+  "topChapters": [
+    {
+      "num": 10,
+      "title": "The One-on-One",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 15,
+      "words": 666
+    },
+    {
+      "num": 29,
+      "title": "Hiring",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 9,
+      "words": 330
+    },
+    {
+      "num": 53,
+      "title": "Empowerment",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 8,
+      "words": 435
+    },
+    {
+      "num": 9,
+      "title": "The Coaching Plan",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 7,
+      "words": 341
+    },
+    {
+      "num": 28,
+      "title": "Interviewing",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 6,
+      "words": 499
+    },
+    {
+      "num": 49,
+      "title": "Insights",
+      "part": "Part VI",
+      "partTitle": "Product Strategy",
+      "quotes": 5,
+      "words": 373
+    },
+    {
+      "num": 26,
+      "title": "Competence and Character",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 5,
+      "words": 323
+    },
+    {
+      "num": 24,
+      "title": "Happiness",
+      "part": "Part II",
+      "partTitle": "Coaching",
+      "quotes": 5,
+      "words": 269
+    },
+    {
+      "num": 43,
+      "title": "Empowering Platform Teams",
+      "part": "Part V",
+      "partTitle": "Team Topology",
+      "quotes": 5,
+      "words": 269
+    },
+    {
+      "num": 48,
+      "title": "Focus",
+      "part": "Part VI",
+      "partTitle": "Product Strategy",
+      "quotes": 4,
+      "words": 1390
+    },
+    {
+      "num": 54,
+      "title": "Assignment",
+      "part": "Part VII",
+      "partTitle": "Team Objectives",
+      "quotes": 4,
+      "words": 507
+    },
+    {
+      "num": 30,
+      "title": "Remote Employees",
+      "part": "Part III",
+      "partTitle": "Staffing",
+      "quotes": 4,
+      "words": 366
+    }
+  ]
+}

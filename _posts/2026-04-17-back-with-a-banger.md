@@ -2,7 +2,7 @@
 layout: post
 title: "Back with a Banger"
 date: 2026-04-17
-categories: [Personal, AI-Assisted Development, Game]
+categories: [Personal, AI Development, Game Development, Web Development, UI Design]
 author: Tobias Eichermüller
 ---
 

@@ -14,6 +14,7 @@ goatcounter_code: "chasingtheholygrail"
 timezone: Europe/Berlin
 markdown: kramdown
 highlighter: rouge
+future: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -27,6 +28,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - workfiles/
 
 # Navigation
 navigation:

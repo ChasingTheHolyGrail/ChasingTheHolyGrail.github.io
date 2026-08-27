@@ -1256,7 +1256,76 @@ li {
     font-weight: 700;
   }
 
+  .coaching-areas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    margin: $spacing-unit 0 $spacing-unit * 1.25;
+  }
+
+  .coaching-area {
+    padding: 0.85rem 1rem;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-top: 3px solid $accent-color;
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .coaching-area__title {
+    margin: 0 0 0.45rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+
+  .coaching-area__text {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: $text-color;
+  }
+
+  @media (max-width: 600px) {
+    .coaching-areas {
+      grid-template-columns: 1fr;
+    }
+  }
+
   // Side by side comparison cards (e.g. Roadmap vs OKR)
+  .vs-compare-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin: $spacing-unit 0 $spacing-unit * 1.25;
+  }
+
+  .vs-compare {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .vs-compare__title {
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: $primary-color;
+    background: rgba($accent-color, 0.06);
+    border-bottom: 1px solid $border-color;
+    text-align: center;
+  }
+
+  .vs-compare .vs-cards {
+    margin: 0;
+    padding: 0.75rem;
+  }
+
   .vs-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1310,6 +1379,14 @@ li {
   .vs-card__hint {
     font-size: 0.8rem;
     color: $text-light;
+
+    p {
+      margin: 0;
+
+      + p {
+        margin-top: 0.35rem;
+      }
+    }
   }
 
   @media (max-width: 600px) {
@@ -1318,70 +1395,255 @@ li {
     }
   }
 
-  // Compact YouTube thumbnail with play button overlay
-  .youtube-embed {
-    display: block;
-    max-width: 280px;
-    margin: $spacing-unit * 0.5 auto $spacing-unit * 0.75;
-  }
-
-  .youtube-embed__link {
-    position: relative;
-    display: block;
+  .team-matrix {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: $spacing-unit 0 $spacing-unit * 1.25;
+    font-size: 0.88rem;
+    line-height: 1.4;
+    border: 1px solid $border-color;
     border-radius: 8px;
     overflow: hidden;
-    text-decoration: none !important;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #fff;
+    text-align: left;
+    hyphens: none;
+    overflow-wrap: normal;
+    word-break: normal;
 
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+    &__row {
+      display: grid;
+      grid-template-columns: minmax(0, 0.82fr) repeat(3, minmax(0, 1fr));
 
-      .youtube-embed__play svg {
-        transform: scale(1.08);
+      > *:nth-child(1) {
+        background: rgba($accent-color, 0.06);
+      }
+
+      > *:nth-child(2) {
+        background: rgba($text-light, 0.12);
+      }
+
+      > *:nth-child(3) {
+        background: mix($bg-light, $bg-color, 62%);
+      }
+
+      > *:nth-child(4) {
+        background: rgba($accent-color, 0.11);
+      }
+    }
+
+    &__corner,
+    &__head,
+    &__cell {
+      min-width: 0;
+      padding: 0.65rem 0.5rem;
+      border-bottom: 1px solid $border-color;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    &__label {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 0.35em;
+      row-gap: 0.1em;
+      min-width: 0;
+      padding: 0.65rem 0.5rem;
+      border-bottom: 1px solid $border-color;
+      vertical-align: top;
+      text-align: left;
+      font-weight: 600;
+      color: $primary-color;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+
+      &--nowrap {
+        white-space: nowrap;
+      }
+    }
+
+    &__row:last-child &__label,
+    &__row:last-child &__cell {
+      border-bottom: none;
+    }
+
+    &__head {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 0.35em;
+      row-gap: 0.1em;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-transform: none;
+      line-height: 1.3;
+      background: rgba($accent-color, 0.08);
+      color: $primary-color;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      overflow-wrap: normal;
+      word-break: normal;
+      hyphens: none;
+    }
+
+    &__head-line,
+    &__label-line {
+      display: block;
+      hyphens: none;
+    }
+
+    &__head--delivery {
+      background: rgba($text-light, 0.14);
+      color: $text-light;
+      box-shadow: inset 0 3px 0 $text-light;
+    }
+
+    &__head--feature {
+      background: mix($bg-light, $bg-color, 45%);
+      color: mix($text-light, $accent-color, 35%);
+      box-shadow: inset 0 3px 0 mix($text-light, $accent-color, 55%);
+    }
+
+    &__head--empowered {
+      background: rgba($accent-color, 0.16);
+      color: $accent-color;
+      box-shadow: inset 0 3px 0 $accent-color;
+    }
+
+    &__row > &__head--delivery {
+      background: rgba($text-light, 0.14);
+    }
+
+    &__row > &__head--feature {
+      background: mix($bg-light, $bg-color, 45%);
+    }
+
+    &__row > &__head--empowered {
+      background: rgba($accent-color, 0.16);
+    }
+
+    &__cell {
+      color: $text-color;
+    }
+
+    &__line {
+      display: block;
+      line-height: 1.35;
+      hyphens: none;
+      overflow-wrap: normal;
+      word-break: normal;
+
+      & + & {
+        margin-top: 0.3rem;
+      }
+
+      &--note {
+        display: block;
+        margin-top: 0.45rem;
+        color: $text-light;
+        font-size: 0.92em;
+      }
+
+      &--sub {
+        display: block;
+        margin-top: 0;
+        color: $text-light;
+        font-size: 0.92em;
+        line-height: inherit;
+      }
+
+      & + &--sub {
+        margin-top: 0;
+      }
+
+      &--blank {
+        visibility: hidden;
+        min-height: 1.35em;
+      }
+
+      &--blank + &--note {
+        margin-top: 0.3rem;
       }
     }
   }
 
-  .youtube-embed__thumb {
-    display: block;
-    width: 100% !important;
-    max-width: 100%;
-    height: auto;
-    margin: 0 !important;
-    border-radius: 0;
-    box-shadow: none;
-  }
+  @media (max-width: 768px) {
+    .team-matrix {
+      font-size: 0.78rem;
 
-  .youtube-embed__play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    line-height: 0;
-    pointer-events: none;
+      &__row {
+        grid-template-columns: minmax(6rem, 0.58fr) repeat(3, minmax(0, 1fr));
+      }
 
-    svg {
-      display: block;
-      transition: transform 0.2s ease;
-      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+      &__corner,
+      &__head,
+      &__label,
+      &__cell {
+        padding: 0.55rem 0.35rem;
+      }
+
+      &__head {
+        font-size: 0.72rem;
+        line-height: 1.25;
+      }
+
+      &__head,
+      &__label {
+        flex-direction: column;
+        column-gap: 0;
+      }
+
+      &__label--nowrap {
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
     }
   }
 
-  .youtube-embed__badge {
-    position: absolute;
-    bottom: 6px;
-    right: 6px;
-    padding: 2px 6px;
-    border-radius: 3px;
-    background: rgba(0, 0, 0, 0.78);
-    color: #fff;
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    line-height: 1.4;
-    pointer-events: none;
+  @media (max-width: 480px) {
+    .team-matrix {
+      font-size: 0.74rem;
+      line-height: 1.35;
+
+      &__corner,
+      &__head,
+      &__label,
+      &__cell {
+        padding: 0.5rem 0.28rem;
+      }
+    }
+  }
+
+  .youtube-embed {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    margin: $spacing-unit * 0.75 auto $spacing-unit;
+  }
+
+  .youtube-embed__frame {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
   }
 
   .youtube-embed__caption {
@@ -1498,13 +1760,86 @@ li {
     width: 100%;
   }
 
-  .inspired-quotes-analysis {
+  .inspired-quotes-analysis,
+  .empowered-quotes-analysis {
     margin: $spacing-unit 0 $spacing-unit * 1.25;
     padding: $spacing-unit;
     background: rgba($accent-color, 0.04);
     border: 1px solid rgba($accent-color, 0.15);
     border-radius: 8px;
     text-align: left;
+  }
+
+  .iqa-donut-wrap--stacked {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .iqa-donut-wrap--stacked .iqa-legend {
+    width: 100%;
+  }
+
+  .draft-placeholder {
+    margin: $spacing-unit 0 $spacing-unit * 1.25;
+    padding: 1rem 1.1rem;
+    background: rgba(#c9a227, 0.08);
+    border: 1px dashed rgba(#c9a227, 0.55);
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .side-note {
+    margin: $spacing-unit * 0.75 0 $spacing-unit;
+    padding: 0.65rem 0.85rem 0.75rem;
+    background: rgba($primary-color, 0.03);
+    border: 1px solid rgba($primary-color, 0.1);
+    border-left: 2px solid rgba($accent-color, 0.5);
+    border-radius: 0 6px 6px 0;
+    text-align: left;
+
+    p {
+      margin: 0.35rem 0 0;
+      color: $text-color;
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    p:first-of-type {
+      margin-top: 0;
+    }
+
+    p + p {
+      margin-top: 0.45rem;
+      color: $text-light;
+      font-size: 0.82rem;
+    }
+  }
+
+  .side-note__label {
+    margin: 0 0 0.35rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+
+  .draft-placeholder__label {
+    margin: 0 0 0.45rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #8a7018;
+  }
+
+  .draft-placeholder p {
+    margin: 0.35rem 0 0;
+    color: $text-light;
+  }
+
+  .draft-placeholder p:first-of-type {
+    margin-top: 0;
   }
 
   .iqa-heading {
@@ -1517,7 +1852,17 @@ li {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.75rem;
+  }
+
+  .iqa-stats-wrap {
     margin-bottom: $spacing-unit;
+  }
+
+  .iqa-stats-note {
+    margin: 0.35rem 0 0;
+    font-size: 0.72rem;
+    color: $text-light;
+    text-align: right;
   }
 
   .iqa-stat {
@@ -1542,6 +1887,12 @@ li {
     margin-top: 0.25rem;
     font-size: 0.8rem;
     color: $text-light;
+  }
+
+  .iqa-stat__compare {
+    font-size: 0.72em;
+    font-weight: 500;
+    color: rgba($text-light, 0.9);
   }
 
   .iqa-card {
@@ -1853,7 +2204,8 @@ li {
   }
 
   @media (max-width: 760px) {
-    .inspired-quotes-analysis {
+    .inspired-quotes-analysis,
+    .empowered-quotes-analysis {
       padding: $spacing-unit * 0.75;
     }
 
@@ -2138,6 +2490,34 @@ li {
     }
   }
 
+  .quote-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin: $spacing-unit 0 $spacing-unit * 1.25;
+
+    blockquote {
+      margin: 0;
+      height: 100%;
+      font-size: 0.94rem;
+      line-height: 1.55;
+
+      cite {
+        display: block;
+        font-style: normal;
+        font-size: 0.75rem;
+        margin-bottom: 0.6rem;
+        color: $text-light;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .quote-pair {
+      grid-template-columns: 1fr;
+    }
+  }
+
   img {
     max-width: 100%;
     width: 100%;
@@ -2146,6 +2526,11 @@ li {
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
     margin: $spacing-unit * 1.25 auto;
     display: block;
+  }
+
+  img.book-cover {
+    width: auto;
+    max-width: 280px;
   }
 
   // Image captions (em after img)
@@ -2157,6 +2542,28 @@ li {
     margin-top: -$spacing-unit * 0.9;
     margin-bottom: $spacing-unit;
     font-style: normal;
+  }
+
+  .promise-box {
+    margin: $spacing-unit * 1.5 0;
+    padding: $spacing-unit * 1.5;
+    background: white;
+    border: 4px solid $accent-color;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: $accent-color;
+    box-shadow: 0 10px 30px rgba(24, 165, 75, 0.2);
+    transform: rotate(-1deg);
+    line-height: 1.1;
+  }
+
+  @media (max-width: 600px) {
+    .promise-box {
+      font-size: 2.2rem;
+      padding: $spacing-unit;
+    }
   }
 
   hr {
@@ -2207,10 +2614,49 @@ li {
         line-height: 1.3;
       }
     }
+
+    &.coaching-1on1-table {
+      font-size: 0.88rem;
+      line-height: 1.55;
+
+      th {
+        white-space: normal;
+      }
+
+      td:first-child {
+        width: 14%;
+        min-width: 6.5rem;
+        font-weight: 600;
+      }
+
+      td:nth-child(2),
+      td:nth-child(3) {
+        width: 43%;
+      }
+    }
+  }
+
+  .table-intro {
+    margin: $spacing-unit * 0.5 0 $spacing-unit * 0.75;
+    font-size: 0.92rem;
+    color: $text-color;
+    text-align: left;
+  }
+
+  .table-note {
+    margin: $spacing-unit * 0.25 0 $spacing-unit;
+    font-size: 0.82rem;
+    color: $text-light;
+    text-align: left;
+
+    em {
+      font-style: normal;
+    }
   }
 
   // Table footnotes (paragraph with only em after table)
-  table + p {
+  table + p,
+  .team-matrix + p {
     &:has(> em:only-child) {
       font-size: 0.8rem;
       color: $text-light;
@@ -2252,7 +2698,7 @@ li {
     display: block;
     width: auto;
     height: auto;
-    max-width: min(92vw, 820px);
+    max-width: Min(92vw, 820px);
     max-height: 92vh;
     border-radius: 12px;
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
@@ -2467,7 +2913,7 @@ li {
   .hero-content {
     display: flex;
     flex-wrap: wrap;
-    gap: clamp(0.75rem, 2.5vh, 1.5rem);
+    gap: Clamp(0.75rem, 2.5vh, 1.5rem);
     align-items: center;
     justify-content: center;
   }
@@ -2475,8 +2921,8 @@ li {
   // Mobile: Image on left, title on right, centered together
   .hero-image {
     order: 1;
-    width: clamp(80px, 15vh, 130px);
-    height: clamp(80px, 15vh, 130px);
+    width: Clamp(80px, 15vh, 130px);
+    height: Clamp(80px, 15vh, 130px);
     flex-shrink: 0;
 
     img {
@@ -2503,7 +2949,7 @@ li {
   .hero-title {
     order: 2;
     flex: 0 0 auto;
-    font-size: clamp(1.25rem, 3.5vh, 1.85rem);
+    font-size: Clamp(1.25rem, 3.5vh, 1.85rem);
     min-width: 0;
     margin-bottom: 0;
     text-align: left;
@@ -2519,51 +2965,51 @@ li {
     order: 4;
     width: 100%;
     max-width: 100%;
-    font-size: clamp(0.85rem, 2vh, 1.05rem);
+    font-size: Clamp(0.85rem, 2vh, 1.05rem);
     line-height: 1.55;
     text-align: center;
-    margin-bottom: clamp(0.5rem, 1.5vh, 1rem);
-    margin-top: clamp(1rem, 3vh, 2rem);
+    margin-bottom: Clamp(0.5rem, 1.5vh, 1rem);
+    margin-top: Clamp(1rem, 3vh, 2rem);
   }
 
   .hero-buttons {
     order: 5;
     width: 100%;
     justify-content: center;
-    margin-top: clamp(0.5rem, 1.5vh, 1rem);
-    gap: clamp(0.75rem, 2vw, 1.25rem);
+    margin-top: Clamp(0.5rem, 1.5vh, 1rem);
+    gap: Clamp(0.75rem, 2vw, 1.25rem);
     
     .btn-primary,
     .btn-secondary {
-      padding: clamp(0.65rem, 1.5vh, 0.9rem) clamp(1.25rem, 5vw, 2rem);
-      min-width: clamp(100px, 28vw, 130px);
-      font-size: clamp(0.9rem, 2vh, 1rem);
+      padding: Clamp(0.65rem, 1.5vh, 0.9rem) Clamp(1.25rem, 5vw, 2rem);
+      min-width: Clamp(100px, 28vw, 130px);
+      font-size: Clamp(0.9rem, 2vh, 1rem);
     }
   }
 
   .hero-social {
     order: 6;
     width: 100%;
-    margin-top: clamp(1rem, 3vh, 2rem);
-    padding-top: clamp(0.75rem, 2vh, 1.25rem);
+    margin-top: Clamp(1rem, 3vh, 2rem);
+    padding-top: Clamp(0.75rem, 2vh, 1.25rem);
 
     .social-links {
       justify-content: center;
-      gap: clamp(0.75rem, 3vw, 1.25rem);
+      gap: Clamp(0.75rem, 3vw, 1.25rem);
     }
 
     .social-link {
-      flex: 0 0 clamp(3.75rem, 18vw, 4.3rem);
-      width: clamp(3.75rem, 18vw, 4.3rem);
+      flex: 0 0 Clamp(3.75rem, 18vw, 4.3rem);
+      width: Clamp(3.75rem, 18vw, 4.3rem);
     }
 
     .social-link-icon {
-      width: clamp(45px, 7.5vh, 57px);
-      height: clamp(45px, 7.5vh, 57px);
+      width: Clamp(45px, 7.5vh, 57px);
+      height: Clamp(45px, 7.5vh, 57px);
 
       svg {
-        width: clamp(20px, 3.6vh, 30px);
-        height: clamp(20px, 3.6vh, 30px);
+        width: Clamp(20px, 3.6vh, 30px);
+        height: Clamp(20px, 3.6vh, 30px);
       }
     }
 
@@ -2693,6 +3139,11 @@ li {
       box-sizing: border-box;
     }
 
+    img.book-cover {
+      width: auto !important;
+      max-width: 220px !important;
+    }
+
     table {
       width: 100% !important;
       max-width: 100% !important;
@@ -2723,7 +3174,7 @@ li {
 }
 
 @media (max-width: 480px) {
-  // Hero styles now handled by clamp() in 768px breakpoint
+  // Hero styles now handled by Clamp() in 768px breakpoint
 
   .cv-page {
     .cv-header-section {
@@ -2775,6 +3226,11 @@ li {
       width: 100% !important;
       height: auto !important;
       box-sizing: border-box;
+    }
+
+    img.book-cover {
+      width: auto !important;
+      max-width: 220px !important;
     }
 
     table {
@@ -2851,7 +3307,7 @@ li {
     padding: 0;
   }
 
-  // Hero styles now handled by clamp() in 768px breakpoint
+  // Hero styles now handled by Clamp() in 768px breakpoint
 
   .page-title {
     font-size: 1.5rem;
@@ -3023,20 +3479,20 @@ li {
 }
 
 // Safe area insets for notched devices (iPhone X+, etc.)
-@supports (padding: max(0px)) {
+@supports (padding: Max(0px)) {
   .site-header {
-    padding-left: max(#{$spacing-unit}, env(safe-area-inset-left));
-    padding-right: max(#{$spacing-unit}, env(safe-area-inset-right));
+    padding-left: Max(#{$spacing-unit}, env(safe-area-inset-left));
+    padding-right: Max(#{$spacing-unit}, env(safe-area-inset-right));
   }
 
   .main-content {
-    padding-left: max(#{$spacing-unit}, env(safe-area-inset-left));
-    padding-right: max(#{$spacing-unit}, env(safe-area-inset-right));
+    padding-left: Max(#{$spacing-unit}, env(safe-area-inset-left));
+    padding-right: Max(#{$spacing-unit}, env(safe-area-inset-right));
   }
 
   @media (max-width: 768px) {
     .nav-links {
-      padding-right: max(#{$spacing-unit * 2}, env(safe-area-inset-right));
+      padding-right: Max(#{$spacing-unit * 2}, env(safe-area-inset-right));
     }
   }
 }

@@ -2,7 +2,7 @@
 layout: post
 title: "From Pieces to Picture"
 date: 2026-02-21
-categories: [Personal, Leadership, Books, Podcast]
+categories: [Personal, Leadership, Books, Engineering Management, Strategy]
 author: Tobias Eichermüller
 ---
 
